@@ -11,6 +11,5 @@ class Solution:
         
         shifted = z - np.max(z)
         print(shifted)
-        numerator = np.exp(shifted)
-        denominator = np.sum(np.exp(shifted))
-        return np.round(numerator / denominator, 4)
+        exp = np.exp(shifted)
+        return np.round(exp / np.sum(exp), 4)
